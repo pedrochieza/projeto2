@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja um Herói</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="estilo/imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>INSCRIÇÕES ABERTAS!!!</h1>
+        <h2>Se inscreva hoje mesmo! Faça parte de uma equipe de supers você também!</h2>
+    </header>
+    <main>
+        <form id="inscricoes" name="inscricoes" autocomplete="off" enctype="text/plain">
+            <fieldset>
+                
+                <p>
+                    <input type="text" id= "nome" placeholder="Digite seu nome completo" maxlength="65"/>
+                    <span id="msgUser">*</span>
+
+                    <input type="text" id= "alterego" placeholder="Insira seu nome de super!"/>
+                    <span id="msgAlter">*</span>
+                </p>
+
+                <p>
+                    <input type="email" id= "email" placeholder="Email para contato"/>
+                    <span id="msgEmail">*</span>
+                    
+                    <input type="tel" id= "telefone" placeholder="Telefone para contato" maxlength="11"/>
+                    <span id="msgTel">*</span>
+                </p>
+
+                <p>
+                    <label for="especie">Espécie/Raça: <span>*</span></label>
+                    <select name="nomeMenu" id="especie">
+                            <option value="">Opções</option>   
+                        <optgroup label="Marvel">
+                            <option value="Mutantes">Mutante</option>
+                            <option value="Inumanos">Inumana</option>
+                            <option value="Eternos">Eterna</option>
+                            <option value="Asgardianos">Asgardiana</option>
+                            <option value="Simbiontes">Simbionte</option>
+                        </optgroup>
+                        <optgroup label="DC">
+                            <option value="Kryptonianos">Kryptoniana</option>
+                            <option value="Amazonas">Amazona</option>
+                            <option value="Divindades">Divindade</option>
+                            <option value="Meta-Humanos">Meta-Humana</option>
+                            <option value="Thanagarianos">Thanagariana</option>
+                        </optgroup>
+                        <optgroup label="Outros">
+                            <option value="Humanos">Humana</option>
+                            <option value="Marcianos">Marciana</option>
+                            <option value="Alienígens">Alienígena (Geral)</option>
+                            <option value="Androids">Android</option>
+                            <option value="Robôs">Robô</option>
+                            <option value="Outros">Outra</option>
+                        </optgroup>
+                    </select>                    
+                    <span id="msgSel1"></span>
+                </p>
+                <p>
+                    <label for="equipe">Equipe que deseja entrar: <span>*</span></label>
+                    <select name="nomeMenu" id="equipe">
+                            <option value="">Opções</option>  
+                        <optgroup label="Marvel">p
+                            <option value="Vingadores" >Vingadores</option>
+                            <option value="X-Men"      >X-Men</option>
+                            <option value="Guardiões"  >Guardiões da Galáxia</option>
+                            <option value="Quarteto"   >Quarteto Fantástico</option>
+                            <option value="Jovens"     >Jovens Vingadores</option>
+                            <option value="X-Force"    >X-Force</option>
+                            <option value="Defensores" >Defensores</option>
+                            <option value="Eternos"    >Eternos</option>
+                            <option value="Campeões"   >Campeões</option>
+                            <option value="Fugitivos"  >Fugitivos</option>
+                            <option value="Outra"      >Outra</option>
+                        </optgroup>
+                        <optgroup label="DC">
+                            <option value="Justiça"    >Liga da Justiça</option>
+                            <option value="Sociedade"  >Sociedade da Justiça</option>
+                            <option value="Jovens"     >Jovens Titans</option>
+                            <option value="Titans"     >Titans</option>
+                            <option value="Jovem"      >Justiça Jovem</option>
+                            <option value="Legião"     >Legião dos Super-Heróis</option>
+                            <option value="Sombria"    >Liga da Justiça Sombria</option>
+                            <option value="Lanterna">Tropa de Lanterna</option>
+                            <option value="Outra"      >Outra</option>
+                        </optgroup>
+                        <optgroup label="Outras">
+                            <option value="Umbrella"   >Umbrella Academy</option>
+                            <option value="Sparrow"    >Sparrow Academy</option>
+                            <option value="The Boys"   >The Boys</option>
+                            <option value="Os Sete"    >Os Sete</option>
+                            <option value="Rangers"    >Power Rangers</option>
+                            <option value="Extraordina">Liga Extraordinária</option>
+                            <option value="Outra"      >Outra</option>
+                        </optgroup>
+                    </select>                    
+                    <span id="msgSel2"></span>
+                </p>
+
+                <p>
+                    <label for="primaria">Poder/Habilidade Primária: <span>*</span></label>
+                    <select name="nomeMenu" id="primaria">
+                            <option value="">Opções</option>  
+                        <optgroup label="Físicos">
+                            <option value="adapt_ambie">Adaptação Ambiental</option>
+                            <option value="amorfismo"  >Amorfismo</option>
+                            <option value="camuflagem" >Camuflagem</option>
+                            <option value="condi_sobre">Condição Sobrenatural</option>
+                            <option value="elasticidad">Elasticidade</option>
+                            <option value="imortalidad">Imortalidade</option>
+                            <option value="intangibili">Intangibilidade</option>
+                            <option value="invisibilid">Invisibilidade</option>
+                            <option value="regen_celul">Regeneração Celular</option>
+                            <option value="retra_garra">Retração de Garras</option>
+                            <option value="retra_presa">Retração de Presas</option>
+                            <option value="super_força">Super Força</option>
+                            <option value="super_veloc">Super Velocidade</option>
+                            <option value="voo"        >Voo</option>
+                        </optgroup>
+                        <optgroup label="Cinéticos">
+                            <option value="Aerocinese"  >Aerocinese</option>
+                            <option value="Criocinese"  >Criocinese</option>
+                            <option value="Eletrocinese">Eletrocinese</option>
+                            <option value="Fitocinese"  >Fitocinese</option>
+                            <option value="Fotocinese"  >Fotocinese</option>
+                            <option value="Aerocinese"  >Fumocinese</option>
+                            <option value="Gelicinese"  >Gelicinese</option>
+                            <option value="Geocinese"   >Geocinese</option>
+                            <option value="Hidrocinese" >Hidrocinese</option>
+                            <option value="Pirocinese"  >Pirocinese</option>
+                            <option value="Umbracinese" >Umbracinese</option>
+                        </optgroup>
+                        <optgroup label="Manipulações">
+                            <option value="almas"      >Manipulação de Almas</option>
+                            <option value="biologica"  >Manipulação Biológica</option>
+                            <option value="corporal"   >Manipulação Corporal</option>
+                            <option value="espaço"     >Manipulação do Espaço</option>
+                            <option value="tempo"      >Manipulação do Tempo</option>
+                            <option value="realidade"  >Manipulação da Realidade</option>
+                            <option value="gravidade"  >Manipulação da Gravidade</option>
+                            <option value="elemental"  >Manipulação Elemental</option>
+                            <option value="magnética"  >Manipulação Magnética</option>
+                            <option value="clima"      >Manipulação do Clima</option>
+                            <option value="mental"     >Manipulação Mental</option>
+                            <option value="sonhos"     >Manipulação de Sonhos</option>
+                            <option value="superpode"  >Manipulação de Superpoderes</option>
+                            <option value="emoções"    >Manipulação de Emoções</option>
+                            <option value="explosão"   >Manipulação de Explosão</option>
+                            <option value="energ_magic">Manipulação de Energia Mágica</option>
+                            <option value="mana"       >Manipulação de Mana</option>
+                        </optgroup>
+                        <optgroup label="Poderes Mentais">
+                            <option value="contr_menta">Controle Mental</option>
+                            <option value="escud_psiqu">Escudo Psíquico</option>
+                            <option value="empatia"    >Empatia</option>
+                            <option value="impre_psion">Impressão Psiônica</option>
+                            <option value="ilusionismo">Ilusionismo</option>
+                            <option value="proje_astra">Projeção Astral</option>
+                            <option value="precognicao">Precognição</option>
+                            <option value="rajad_psion">Rajada Psiônica</option>
+                            <option value="resol_miste">Resolução de Mistérios</option>
+                            <option value="telecinese" >Telecinese</option>
+                            <option value="telepatia"  >Telepatia</option>
+                        </optgroup>
+                        <optgroup label="Poderes Sensoriais">
+                            <option value="senti_melho">Sentidos Melhorados</option>
+                            <option value="super_audic">Super Audição</option>
+                            <option value="super_visao">Super Visão</option>
+                            <option value="super_olfat">Super Olfato</option>
+                            <option value="senso_perig">Sensor de Perigo</option>
+                        </optgroup>
+                        <optgroup label="Poderes Mágicos">
+                            <option value="contr_menta">Magia</option>
+                            <option value="escud_psiqu">Magia das Trevas</option>
+                            <option value="empatia"    >Feitiçaria</option>
+                            <option value="impre_psion">Alquimia</option>
+                            <option value="ilusionismo">Necromancia</option>
+                            <option value="proje_astra">Abjuração</option>
+                            <option value="precognicao">Conjuração</option>
+                            <option value="rajad_psion">Divinação</option>
+                            <option value="resol_miste">Encantamento</option>
+                            <option value="trans_magic">Transcendência Mágica</option>
+                        </optgroup>
+                        <optgroup label='"Não Poderes"'>
+                            <option value="intel_melho">Inteligência Melhorada</option>
+                            <option value="memor_melho">Memória Melhorada</option>
+                            <option value="super_ponta">Super Pontaria</option>
+                            <option value="supre_dor"  >Supressão de Dor</option>
+                            <option value="genio_tatic">Gênio Tático</option>
+                            <option value="exerc_um"   >Exército de Um</option>
+                            <option value="adapt_comba">Adaptação de Combate</option>
+                            <option value="artes_marci">Intuição de Artes Marciais</option>
+                            <option value="comba_melho">Combate Melhorado</option>
+                            <option value="agili_melho">Agilidade Melhorada</option>
+                            <option value="atlet_melho">Atletismo Melhorado</option>
+                            <option value="saude">Saúde Melhorada</option>
+                        </optgroup>
+                        <optgroup label='"Outros"'>
+                            <option value="outro_poder">Outros poderes</option>
+                            <option value="outro_poder">Possuo um artefato místico</option>
+                            <option value="zé_ninguém" >Zé Ninguém (Nada)</option>
+                        </optgroup>
+                    </select>                    
+                    <span id="msgSel3"></span>
+                </p>
+
+                <p>
+                    <label for="secundaria">Poder/Habilidade Secundária: </label>
+                    <select name="nomeMenu" id="secundaria">
+                            <option value="">Nenhum</option>  
+                        <optgroup label="Físicos">
+                            <option value="adapt_ambie">Adaptação Ambiental</option>
+                            <option value="amorfismo"  >Amorfismo</option>
+                            <option value="camuflagem" >Camuflagem</option>
+                            <option value="condi_sobre">Condição Sobrenatural</option>
+                            <option value="elasticidad">Elasticidade</option>
+                            <option value="imortalidad">Imortalidade</option>
+                            <option value="intangibili">Intangibilidade</option>
+                            <option value="invisibilid">Invisibilidade</option>
+                            <option value="regen_celul">Regeneração Celular</option>
+                            <option value="retra_garra">Retração de Garras</option>
+                            <option value="retra_presa">Retração de Presas</option>
+                            <option value="super_força">Super Força</option>
+                            <option value="super_veloc">Super Velocidade</option>
+                            <option value="voo"        >Voo</option>
+                        </optgroup>
+                        <optgroup label="Cinéticos">
+                            <option value="Aerocinese"  >Aerocinese</option>
+                            <option value="Criocinese"  >Criocinese</option>
+                            <option value="Eletrocinese">Eletrocinese</option>
+                            <option value="Fitocinese"  >Fitocinese</option>
+                            <option value="Fotocinese"  >Fotocinese</option>
+                            <option value="Aerocinese"  >Fumocinese</option>
+                            <option value="Gelicinese"  >Gelicinese</option>
+                            <option value="Geocinese"   >Geocinese</option>
+                            <option value="Hidrocinese" >Hidrocinese</option>
+                            <option value="Pirocinese"  >Pirocinese</option>
+                            <option value="Umbracinese" >Umbracinese</option>
+                        </optgroup>
+                        <optgroup label="Manipulações">
+                            <option value="almas"      >Manipulação de Almas</option>
+                            <option value="biologica"  >Manipulação Biológica</option>
+                            <option value="corporal"   >Manipulação Corporal</option>
+                            <option value="espaço"     >Manipulação do Espaço</option>
+                            <option value="tempo"      >Manipulação do Tempo</option>
+                            <option value="realidade"  >Manipulação da Realidade</option>
+                            <option value="gravidade"  >Manipulação da Gravidade</option>
+                            <option value="elemental"  >Manipulação Elemental</option>
+                            <option value="magnética"  >Manipulação Magnética</option>
+                            <option value="clima"      >Manipulação do Clima</option>
+                            <option value="mental"     >Manipulação Mental</option>
+                            <option value="sonhos"     >Manipulação de Sonhos</option>
+                            <option value="superpode"  >Manipulação de Superpoderes</option>
+                            <option value="emoções"    >Manipulação de Emoções</option>
+                            <option value="explosão"   >Manipulação de Explosão</option>
+                            <option value="energ_magic">Manipulação de Energia Mágica</option>
+                            <option value="mana"       >Manipulação de Mana</option>
+                        </optgroup>
+                        <optgroup label="Poderes Mentais">
+                            <option value="contr_menta">Controle Mental</option>
+                            <option value="escud_psiqu">Escudo Psíquico</option>
+                            <option value="empatia"    >Empatia</option>
+                            <option value="impre_psion">Impressão Psiônica</option>
+                            <option value="ilusionismo">Ilusionismo</option>
+                            <option value="proje_astra">Projeção Astral</option>
+                            <option value="precognicao">Precognição</option>
+                            <option value="rajad_psion">Rajada Psiônica</option>
+                            <option value="resol_miste">Resolução de Mistérios</option>
+                            <option value="telecinese" >Telecinese</option>
+                            <option value="telepatia"  >Telepatia</option>
+                        </optgroup>
+                        <optgroup label="Poderes Sensoriais">
+                            <option value="senti_melho">Sentidos Melhorados</option>
+                            <option value="super_audic">Super Audição</option>
+                            <option value="super_visao">Super Visão</option>
+                            <option value="super_olfat">Super Olfato</option>
+                            <option value="senso_perig">Sensor de Perigo</option>
+                        </optgroup>
+                        <optgroup label="Poderes Mágicos">
+                            <option value="contr_menta">Magia</option>
+                            <option value="escud_psiqu">Magia das Trevas</option>
+                            <option value="empatia"    >Feitiçaria</option>
+                            <option value="impre_psion">Alquimia</option>
+                            <option value="ilusionismo">Necromancia</option>
+                            <option value="proje_astra">Abjuração</option>
+                            <option value="precognicao">Conjuração</option>
+                            <option value="rajad_psion">Divinação</option>
+                            <option value="resol_miste">Encantamento</option>
+                            <option value="trans_magic">Transcendência Mágica</option>
+                        </optgroup>
+                        <optgroup label='"Não Poderes"'>
+                            <option value="intel_melho">Inteligência Melhorada</option>
+                            <option value="memor_melho">Memória Melhorada</option>
+                            <option value="super_ponta">Super Pontaria</option>
+                            <option value="supre_dor"  >Supressão de Dor</option>
+                            <option value="genio_tatic">Gênio Tático</option>
+                            <option value="exerc_um"   >Exército de Um</option>
+                            <option value="adapt_comba">Adaptação de Combate</option>
+                            <option value="artes_marci">Intuição de Artes Marciais</option>
+                            <option value="comba_melho">Combate Melhorado</option>
+                            <option value="agili_melho">Agilidade Melhorada</option>
+                            <option value="atlet_melho">Atletismo Melhorado</option>
+                            <option value="saude">Saúde Melhorada</option>
+                        </optgroup>
+                        <optgroup label='"Outros"'>
+                            <option value="outro_poder">Outros poderes</option>
+                            <option value="outro_poder">Possuo um artefato místico</option>
+                            <option value="zé_ninguém" >Zé Ninguém (Nada)</option>
+                        </optgroup>
+                    </select>
+                
+                </p>
+                <p>
+
+                    <label for="terciaria">Poder/Habilidade Terciária: </label>
+                    <select name="nomeMenu" id="terciaria">
+                        <option value="">Nenhum</option> 
+                        <optgroup label="Físicos">
+                            <option value="adapt_ambie">Adaptação Ambiental</option>
+                            <option value="amorfismo"  >Amorfismo</option>
+                            <option value="camuflagem" >Camuflagem</option>
+                            <option value="condi_sobre">Condição Sobrenatural</option>
+                            <option value="elasticidad">Elasticidade</option>
+                            <option value="imortalidad">Imortalidade</option>
+                            <option value="intangibili">Intangibilidade</option>
+                            <option value="invisibilid">Invisibilidade</option>
+                            <option value="regen_celul">Regeneração Celular</option>
+                            <option value="retra_garra">Retração de Garras</option>
+                            <option value="retra_presa">Retração de Presas</option>
+                            <option value="super_força">Super Força</option>
+                            <option value="super_veloc">Super Velocidade</option>
+                            <option value="voo"        >Voo</option>
+                        </optgroup>
+                        <optgroup label="Cinéticos">
+                            <option value="Aerocinese"  >Aerocinese</option>
+                            <option value="Criocinese"  >Criocinese</option>
+                            <option value="Eletrocinese">Eletrocinese</option>
+                            <option value="Fitocinese"  >Fitocinese</option>
+                            <option value="Fotocinese"  >Fotocinese</option>
+                            <option value="Aerocinese"  >Fumocinese</option>
+                            <option value="Gelicinese"  >Gelicinese</option>
+                            <option value="Geocinese"   >Geocinese</option>
+                            <option value="Hidrocinese" >Hidrocinese</option>
+                            <option value="Pirocinese"  >Pirocinese</option>
+                            <option value="Umbracinese" >Umbracinese</option>
+                        </optgroup>
+                        <optgroup label="Manipulações">
+                            <option value="almas"      >Manipulação de Almas</option>
+                            <option value="biologica"  >Manipulação Biológica</option>
+                            <option value="corporal"   >Manipulação Corporal</option>
+                            <option value="espaço"     >Manipulação do Espaço</option>
+                            <option value="tempo"      >Manipulação do Tempo</option>
+                            <option value="realidade"  >Manipulação da Realidade</option>
+                            <option value="gravidade"  >Manipulação da Gravidade</option>
+                            <option value="elemental"  >Manipulação Elemental</option>
+                            <option value="magnética"  >Manipulação Magnética</option>
+                            <option value="clima"      >Manipulação do Clima</option>
+                            <option value="mental"     >Manipulação Mental</option>
+                            <option value="sonhos"     >Manipulação de Sonhos</option>
+                            <option value="superpode"  >Manipulação de Superpoderes</option>
+                            <option value="emoções"    >Manipulação de Emoções</option>
+                            <option value="explosão"   >Manipulação de Explosão</option>
+                            <option value="energ_magic">Manipulação de Energia Mágica</option>
+                            <option value="mana"       >Manipulação de Mana</option>
+                        </optgroup>
+                        <optgroup label="Poderes Mentais">
+                            <option value="contr_menta">Controle Mental</option>
+                            <option value="escud_psiqu">Escudo Psíquico</option>
+                            <option value="empatia"    >Empatia</option>
+                            <option value="impre_psion">Impressão Psiônica</option>
+                            <option value="ilusionismo">Ilusionismo</option>
+                            <option value="proje_astra">Projeção Astral</option>
+                            <option value="precognicao">Precognição</option>
+                            <option value="rajad_psion">Rajada Psiônica</option>
+                            <option value="resol_miste">Resolução de Mistérios</option>
+                            <option value="telecinese" >Telecinese</option>
+                            <option value="telepatia"  >Telepatia</option>
+                        </optgroup>
+                        <optgroup label="Poderes Sensoriais">
+                            <option value="senti_melho">Sentidos Melhorados</option>
+                            <option value="super_audic">Super Audição</option>
+                            <option value="super_visao">Super Visão</option>
+                            <option value="super_olfat">Super Olfato</option>
+                            <option value="senso_perig">Sensor de Perigo</option>
+                        </optgroup>
+                        <optgroup label="Poderes Mágicos">
+                            <option value="contr_menta">Magia</option>
+                            <option value="escud_psiqu">Magia das Trevas</option>
+                            <option value="empatia"    >Feitiçaria</option>
+                            <option value="impre_psion">Alquimia</option>
+                            <option value="ilusionismo">Necromancia</option>
+                            <option value="proje_astra">Abjuração</option>
+                            <option value="precognicao">Conjuração</option>
+                            <option value="rajad_psion">Divinação</option>
+                            <option value="resol_miste">Encantamento</option>
+                            <option value="trans_magic">Transcendência Mágica</option>
+                        </optgroup>
+                        <optgroup label='"Não Poderes"'>
+                            <option value="intel_melho">Inteligência Melhorada</option>
+                            <option value="memor_melho">Memória Melhorada</option>
+                            <option value="super_ponta">Super Pontaria</option>
+                            <option value="supre_dor"  >Supressão de Dor</option>
+                            <option value="genio_tatic">Gênio Tático</option>
+                            <option value="exerc_um"   >Exército de Um</option>
+                            <option value="adapt_comba">Adaptação de Combate</option>
+                            <option value="artes_marci">Intuição de Artes Marciais</option>
+                            <option value="comba_melho">Combate Melhorado</option>
+                            <option value="agili_melho">Agilidade Melhorada</option>
+                            <option value="atlet_melho">Atletismo Melhorado</option>
+                            <option value="saude">Saúde Melhorada</option>
+                        </optgroup>
+                        <optgroup label='"Outros"'>
+                            <option value="outro_poder">Outros poderes</option>
+                            <option value="outro_poder">Possuo um artefato místico</option>
+                            <option value="zé_ninguém" >Zé Ninguém (Nada)</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                    
+                    
+                </p>
+
+                <p>
+                    <div id="enviar">
+                        <input type="submit" value="Enviar minha Inscrição" class="botaoEnviar"/>
+                    </div>
+                </p>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>Criador: Pedro Chieza Silva</p>
+        <div id="current_date"></p>
+            <script>
+            data = new Date();
+            ano = data.getFullYear();
+            mes = data.getMonth() + 1;
+            dia = data.getDate().toString().padStart(2, "0");
+            document.getElementById("current_date").innerHTML = "Olá, hoje é dia " + dia + "/" + mes + "/" + ano;
+            </script>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
