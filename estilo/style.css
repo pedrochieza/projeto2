@@ -40,7 +40,7 @@
 }
 
 body {
-  background-image: github.io/projeto2/imagens/fundo.png;
+  background-image: url("././imagens/fundo.jpg");
   align-items: center;
   justify-content: center;
 }
