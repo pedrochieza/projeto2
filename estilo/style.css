@@ -41,7 +41,8 @@
 
 body {
   background-image: url(imagens/fundo-menor.png);
-    background-size: cover; 
+    background-size: cover;
+    background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
 }
