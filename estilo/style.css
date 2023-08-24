@@ -40,7 +40,7 @@
 }
 
 body {
-  background-image: url("././imagens/fundo.jpg");
+  background-image: url("./imagens/fundo-menor.jpg");
   align-items: center;
   justify-content: center;
 }
